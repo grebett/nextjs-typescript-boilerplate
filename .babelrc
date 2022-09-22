@@ -1,0 +1,17 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    ["module-resolver", {
+      "root": ["./"],
+      "alias": {
+        "@terraimaginaria/components": "./src/components",
+        "@terraimaginaria/styles": "./src/styles",
+        "@terraimaginaria/data": "./src/data",
+        "@terraimaginaria/assets": "./src/assets",
+        "@terraimaginaria/services": "./src/services",
+        "@terraimaginaria/utils": "./src/utils"
+      }
+    }],
+    ["styled-components", { "ssr": true }]
+  ]
+}
